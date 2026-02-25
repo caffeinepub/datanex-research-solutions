@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "DataNex Research Solutions — a professional web scraping, data research & automated data collection agency website for Jay Gohil (Founder), based in India serving global clients. Founded in 2023 with 3+ years experience. The site features: hero with animated stats, about section, 8 services, 3 featured projects, technologies/skills, industries served, 5-step process, why choose us, counters, contact form, and footer. Navy/gold color scheme with custom cursor, particle background, scroll animations, and mobile responsiveness.",
+  "architectural_notes": [
+    "Single-page HTML/CSS/JS website with no external frameworks (vanilla JS only)",
+    "Navy/gold color scheme with CSS custom properties; fonts: Cormorant Garamond, DM Sans, JetBrains Mono",
+    "Custom cursor, particle canvas background, scroll-reveal animations, animated skill bars, counter animations",
+    "Sections: Hero, About, Services (8), Projects (3), Technologies, Industries (8), Process (5 steps), Why Us, Counter strip, Contact, Footer",
+    "Contact form is frontend-only with simulated submission (no backend integration)"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Dark navy background with subtle gold geometric data-grid lines and faint circuit node dots, landscape banner (hero-bg-pattern.dim_1920x1080.png)\n- Professional dark-themed logo mark with 'DN' initials in gold on deep navy circle, square icon format (datanex-logo-icon.dim_256x256.png)\n- Abstract gold-on-navy data flow illustration showing connected nodes and lines suggesting a web scraping pipeline (data-pipeline-illustration.dim_800x600.png)",
+  "existing_features": [
+    {
+      "id": "feature-update-all-references-to-experience-from-2-3-years-to-3-years-and-all-references-to-founding-year-to-2023-throughout-every-section-of-the-site-hero-badge-about-section-hero-stat-panel-footer-meta-descriptions-and-any-other-mentions",
+      "title": "Update all references to experience from '2–3 years' to '3+ years' and all references to founding year to '2023' throughout every section of the site (hero badge, about section, hero stat panel, footer, meta descriptions, and any other mentions).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rebuild-the-hero-section-to-be-more-visually-striking-replace-the-plain-initials-placeholder-with-an-animated-data-visualization-motif-live-drawing-svg-lines-suggesting-a-scraping-pipeline-add-a-typewriter-effect-cycling-through-specialties-web-scraping-data-research-lead-generation-market-intelligence-keep-the-animated-particle-canvas-stats-panel-ticker-and-scroll-hint",
+      "title": "Rebuild the Hero section to be more visually striking: replace the plain initials placeholder with an animated data-visualization motif (live-drawing SVG lines suggesting a scraping pipeline), add a typewriter effect cycling through specialties ('Web Scraping', 'Data Research', 'Lead Generation', 'Market Intelligence'), keep the animated particle canvas, stats panel, ticker, and scroll hint.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-live-data-feed-marquee-ticker-strip-between-the-hero-and-about-sections-that-displays-real-time-style-animated-data-rows-mock-records-streaming-in-with-columns-like-source-records-status-accuracy-styled-in-the-navy-gold-theme-using-monospace-font-to-feel-like-a-live-terminal-output",
+      "title": "Add a 'Live Data Feed' marquee/ticker strip between the Hero and About sections that displays real-time-style animated data rows (mock records streaming in) with columns like Source, Records, Status, Accuracy — styled in the navy/gold theme using monospace font to feel like a live terminal output.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-about-section-to-include-a-professional-profile-card-on-the-left-side-that-shows-initials-avatar-with-an-animated-gold-ring-border-name-jay-gohil-title-data-research-specialist-founder-founding-badge-2023-a-row-of-platform-badges-upwork-fiverr-linkedin-icons-and-the-99-2-accuracy-deco-card-remove-the-old-plain-frame-placeholder",
+      "title": "Redesign the About section to include a professional profile card on the left side that shows: initials avatar with an animated gold ring border, name 'Jay Gohil', title 'Data Research Specialist & Founder', founding badge '2023', a row of platform badges (Upwork, Fiverr, LinkedIn icons), and the 99.2% accuracy deco card. Remove the old plain frame placeholder.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-interactive-data-scope-estimator-tool-section-between-the-services-and-projects-sections-users-select-target-website-type-dropdown-e-commerce-directory-social-news-custom-volume-slider-1k-1m-records-output-format-csv-excel-json-mysql-and-frequency-one-time-weekly-monthly-the-tool-dynamically-displays-an-estimated-delivery-timeline-and-complexity-badge-simple-moderate-complex-enterprise-with-a-cta-button-request-this-dataset-linking-to-the-contact-form",
+      "title": "Add an interactive 'Data Scope Estimator' tool section between the Services and Projects sections. Users select: Target Website Type (dropdown: E-commerce, Directory, Social, News, Custom), Volume (slider: 1K–1M records), Output Format (CSV / Excel / JSON / MySQL), and Frequency (One-time / Weekly / Monthly). The tool dynamically displays an estimated delivery timeline and complexity badge (Simple / Moderate / Complex / Enterprise) with a CTA button 'Request This Dataset →' linking to the contact form.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-enhance-the-projects-section-with-a-view-all-filter-tab-bar-all-e-commerce-b2b-research-lead-gen-automation-above-the-project-grid-clicking-a-filter-tab-shows-only-matching-project-cards-with-a-smooth-css-transition-keep-existing-3-projects-and-add-2-more-one-for-real-estate-listing-intelligence-property-data-scraping-and-one-for-news-media-sentiment-dataset-news-scraping-sentiment-tagging",
+      "title": "Enhance the Projects section with a 'View All' filter tab bar (All / E-commerce / B2B Research / Lead Gen / Automation) above the project grid. Clicking a filter tab shows only matching project cards with a smooth CSS transition. Keep existing 3 projects and add 2 more: one for 'Real Estate Listing Intelligence' (property data scraping) and one for 'News & Media Sentiment Dataset' (news scraping + sentiment tagging).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-client-testimonials-section-between-the-why-choose-us-section-and-the-counter-strip-display-4-testimonial-cards-in-a-horizontally-scrollable-carousel-each-card-shows-client-name-company-country-flag-emoji-star-rating-5-stars-a-quote-and-a-key-metric-e-g-250k-records-delivered-include-prev-next-arrow-buttons-and-dot-indicators-auto-advance-every-5-seconds",
+      "title": "Add a 'Client Testimonials' section between the Why Choose Us section and the Counter Strip. Display 4 testimonial cards in a horizontally scrollable carousel. Each card shows: client name, company, country flag emoji, star rating (5 stars), a quote, and a key metric (e.g., '250K records delivered'). Include prev/next arrow buttons and dot indicators. Auto-advance every 5 seconds.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-pricing-packages-section-after-the-testimonials-section-featuring-three-tiered-cards-starter-49-up-to-5k-records-csv-3-day-delivery-professional-149-up-to-50k-records-csv-excel-json-5-day-delivery-mysql-storage-and-enterprise-custom-100k-records-all-formats-dedicated-pipeline-ongoing-support-each-card-shows-features-list-a-highlighted-badge-for-the-recommended-plan-and-a-cta-button-include-a-note-all-prices-in-usd-custom-quotes-available-for-complex-projects",
+      "title": "Add a 'Pricing & Packages' section after the Testimonials section, featuring three tiered cards: Starter ($49 — up to 5K records, CSV, 3-day delivery), Professional ($149 — up to 50K records, CSV/Excel/JSON, 5-day delivery, MySQL storage), and Enterprise (Custom — 100K+ records, all formats, dedicated pipeline, ongoing support). Each card shows features list, a highlighted badge for the recommended plan, and a CTA button. Include a note: 'All prices in USD. Custom quotes available for complex projects.'",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-an-animated-terminal-code-window-decorative-component-in-the-technologies-section-right-side-panel-area-showing-a-mock-python-scraping-script-that-types-itself-out-character-by-character-in-a-loop-the-terminal-window-should-have-a-macos-style-title-bar-red-yellow-green-dots-dark-background-and-syntax-highlighted-code-lines-using-the-gold-and-slate-color-palette",
+      "title": "Add an animated 'Terminal / Code Window' decorative component in the Technologies section (right-side panel area), showing a mock Python scraping script that types itself out character by character in a loop. The terminal window should have a macOS-style title bar (red/yellow/green dots), dark background, and syntax-highlighted code lines using the gold and slate color palette.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-sticky-floating-quick-contact-pill-button-that-appears-after-scrolling-300px-distinct-from-the-existing-floating-contact-button-it-should-show-the-text-get-a-free-quote-with-a-gold-background-and-slide-in-from-the-bottom-right-clicking-it-smoothly-scrolls-to-the-contact-section",
+      "title": "Add a sticky floating 'Quick Contact' pill button that appears after scrolling 300px, distinct from the existing floating contact button. It should show the text 'Get a Free Quote' with a gold background and slide in from the bottom-right. Clicking it smoothly scrolls to the contact section.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-form-to-store-submitted-messages-in-the-motoko-backend-the-backend-actor-should-expose-a-submitcontactmessage-function-that-accepts-name-email-company-budget-service-and-message-fields-and-stores-them-in-a-stable-array-also-expose-a-getmessages-query-function-admin-use-not-gated-that-returns-all-stored-messages",
+      "title": "Update the contact form to store submitted messages in the Motoko backend. The backend actor should expose a submitContactMessage function that accepts name, email, company, budget, service, and message fields, and stores them in a stable array. Also expose a getMessages query function (admin use, not gated) that returns all stored messages.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-counter-strip-section-data-to-reflect-the-correct-values-aligned-with-3-years-experience-and-2023-founding-records-scraped-2-4m-projects-delivered-60-data-accuracy-rate-99-2-industries-served-7-ensure-all-counter-animations-trigger-correctly-on-scroll-into-view",
+      "title": "Update the Counter Strip section data to reflect the correct values aligned with 3+ years experience and 2023 founding: Records Scraped: 2.4M+, Projects Delivered: 60+, Data Accuracy Rate: 99.2%, Industries Served: 7+. Ensure all counter animations trigger correctly on scroll into view.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-footer-copyright-line-to-read-2023-2026-datanex-research-solutions-jay-gohil-all-rights-reserved-and-ensure-the-footer-founded-2023-badge-appears-in-the-brand-column-below-the-logo-verify-all-footer-navigation-links-point-to-the-correct-section-anchors",
+      "title": "Update the footer copyright line to read '© 2023–2026 DataNex Research Solutions · Jay Gohil · All Rights Reserved' and ensure the footer 'Founded 2023' badge appears in the brand column below the logo. Verify all footer navigation links point to the correct section anchors.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-full-mobile-responsiveness-across-all-new-and-existing-sections-all-new-components-data-scope-estimator-testimonials-carousel-pricing-cards-terminal-window-live-data-feed-ticker-project-filter-tabs-must-be-tested-for-layout-at-375px-768px-and-1200px-breakpoints-use-tailwind-responsive-prefixes-consistently",
+      "title": "Ensure full mobile responsiveness across all new and existing sections. All new components (Data Scope Estimator, Testimonials Carousel, Pricing Cards, Terminal Window, Live Data Feed ticker, Project Filter tabs) must be tested for layout at 375px, 768px, and 1200px breakpoints. Use Tailwind responsive prefixes consistently.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update experience to 3+ years and founded year to 2023 throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add new features and improvements to make the site more unique and original",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "DataNex Research Solutions",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

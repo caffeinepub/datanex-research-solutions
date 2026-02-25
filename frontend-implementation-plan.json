@@ -1,0 +1,345 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "DataNex Website — Full Rebuild with 3+ Years Experience, 2023 Founded, and Enhanced Features",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Update all experience references to '3+ years' and founding year to '2023' throughout the site",
+      "acceptanceCriteria": [
+        "Hero stat panel shows '3+' for years experience",
+        "About section text reads '3+ years of hands-on experience'",
+        "Footer reads 'Founded 2023'",
+        "No instance of '2–3 years' remains anywhere on the site"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the stat counters and any experience text in the hero section to display '3+' years of experience instead of '2-3 years'. Update the founding year reference to 2023 if present in badges or text."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer to display 'Founded 2023' badge in the brand column below the logo. Ensure copyright line reflects 2023 as the starting year."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Review and update any meta descriptions or page-level text that references experience years or founding date to use '3+ years' and '2023'."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Rebuild Hero section with animated data-visualization SVG, typewriter effect for specialties, and enhanced visual design",
+      "acceptanceCriteria": [
+        "Typewriter cycling text is visible beneath the main headline",
+        "Animated SVG pipeline motif renders in the hero background or alongside the headline",
+        "Particle canvas, stats panel, ticker, and scroll hint remain functional",
+        "Hero is fully responsive on mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace the plain initials placeholder with an animated SVG data-pipeline visualization showing live-drawing lines suggesting a scraping pipeline. Add a typewriter effect component that cycles through specialties: 'Web Scraping', 'Data Research', 'Lead Generation', 'Market Intelligence'. Integrate the generated image frontend/public/assets/generated/data-pipeline-illustration.dim_800x600.png and frontend/public/assets/generated/hero-bg-pattern.dim_1920x1080.png as background elements. Preserve existing particle canvas, stats panel, ticker, and scroll hint functionality."
+        },
+        {
+          "path": "frontend/src/components/TypewriterEffect.tsx",
+          "operation": "create",
+          "description": "Create a reusable typewriter effect component that cycles through an array of strings with typing and deleting animations. Accept props for strings array, typing speed, delete speed, and pause duration."
+        },
+        {
+          "path": "frontend/src/components/DataPipelineSVG.tsx",
+          "operation": "create",
+          "description": "Create an animated SVG component showing a data scraping pipeline with live-drawing paths, nodes, and connection lines. Use navy and gold colors. Animate paths using CSS or SVG animations to suggest data flowing through the pipeline."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add 'Live Data Feed' marquee ticker strip between Hero and About sections with animated mock data rows",
+      "acceptanceCriteria": [
+        "Ticker strip appears between hero and about sections",
+        "Rows animate in continuously (looped)",
+        "Columns include at least: Source, Records, Status, Accuracy",
+        "Uses monospace font and gold/green accent colors matching the theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/LiveDataFeed.tsx",
+          "operation": "create",
+          "description": "Create a marquee ticker component displaying real-time-style animated data rows with columns: Source, Records, Status, Accuracy. Use monospace font and navy/gold theme colors. Rows should scroll continuously in an infinite loop. Style to look like terminal output with dark background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the LiveDataFeed component into the page structure between the HeroSection and the About section (or next visible section)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Redesign About section with professional profile card showing avatar with animated ring, credentials, platform badges, and accuracy card",
+      "acceptanceCriteria": [
+        "Profile card renders with animated gold ring around avatar",
+        "Name, title, and founding year badges are visible",
+        "Platform badges row (Upwork, Fiverr, LinkedIn) is present",
+        "99.2% accuracy card is retained"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "create",
+          "description": "Create the About section with a two-column layout: left side shows a professional profile card with initials avatar (JG), animated gold ring border, name 'Jay Gohil', title 'Data Research Specialist & Founder', founding badge '2023', platform badges row (Upwork, Fiverr, LinkedIn icons), and 99.2% accuracy decorative card. Right side contains the about text describing 3+ years of hands-on experience. Use generated logo frontend/public/assets/generated/datanex-logo-icon.dim_256x256.png if appropriate."
+        },
+        {
+          "path": "frontend/src/components/ProfileCard.tsx",
+          "operation": "create",
+          "description": "Create a reusable profile card component with animated gold ring border using CSS keyframes, displaying avatar/initials, name, title, badges, and platform icons."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the AboutSection component into the page layout after the LiveDataFeed component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Add interactive 'Data Scope Estimator' tool with dynamic delivery timeline and complexity badge",
+      "acceptanceCriteria": [
+        "All four input controls are interactive and functional",
+        "Estimated delivery time updates dynamically as inputs change",
+        "Complexity badge updates based on volume and frequency selections",
+        "CTA button scrolls to the contact section",
+        "Section is fully responsive"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DataScopeEstimator.tsx",
+          "operation": "create",
+          "description": "Create an interactive estimator tool section with four controls: Target Website Type dropdown (E-commerce, Directory, Social, News, Custom), Volume slider (1K–1M records), Output Format radio/select (CSV/Excel/JSON/MySQL), and Frequency select (One-time/Weekly/Monthly). Display a dynamically calculated estimated delivery timeline and complexity badge (Simple/Moderate/Complex/Enterprise) based on inputs. Include CTA button 'Request This Dataset →' that scrolls to #contact anchor. Ensure full responsiveness at mobile breakpoints."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the DataScopeEstimator component into the page between the Services section and the Projects section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Enhance Projects section with category filter tabs and add 2 new project cards",
+      "acceptanceCriteria": [
+        "Filter tabs appear above the project grid",
+        "Clicking a tab filters visible cards with animation",
+        "Two new project cards appear in the grid",
+        "'All' tab shows all 5 projects",
+        "Each new card includes category, title, description, result metric, and tech chips"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProjectGallery.tsx",
+          "operation": "modify",
+          "description": "Add a filter tab bar above the project grid with tabs: All, E-commerce, B2B Research, Lead Gen, Automation. Implement click handlers to filter visible project cards with smooth CSS transition. Add two new project objects to the projects array: 'Real Estate Listing Intelligence' (property data scraping) and 'News & Media Sentiment Dataset' (news scraping + sentiment tagging). Each new card must include category, title, description, result metric, and tech stack chips. Ensure the filter updates both the gallery and the modal view."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Add 'Client Testimonials' carousel section with 4 cards, auto-advance, and navigation controls",
+      "acceptanceCriteria": [
+        "Testimonial section renders with at least 4 cards",
+        "Carousel auto-advances every 5 seconds",
+        "Prev/next buttons and dot indicators are functional",
+        "Each card shows name, company, flag, stars, quote, and a metric",
+        "Section is responsive (single card view on mobile)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TestimonialCarousel.tsx",
+          "operation": "modify",
+          "description": "Update the existing TestimonialCarousel to include 4 distinct testimonial cards with client name, company, country flag emoji, 5-star rating, quote, and key metric (e.g., '250K records delivered'). Ensure auto-advance every 5 seconds, prev/next arrow buttons, and dot indicators are functional. Responsive layout should show single card on mobile viewports."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the TestimonialCarousel component into the page between the Why Choose Us section and the Counter Strip (DataCounterDashboard)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add 'Pricing & Packages' section with three tiered plan cards and custom quote note",
+      "acceptanceCriteria": [
+        "Three pricing cards render with correct tier names, prices, and features",
+        "Professional plan is visually highlighted as recommended",
+        "Each card has a CTA button linking to the contact section",
+        "USD note and custom quote mention are present",
+        "Section is responsive (stacked on mobile)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PricingPackages.tsx",
+          "operation": "create",
+          "description": "Create a Pricing & Packages section with three tiered cards: Starter ($49, up to 5K records, CSV, 3-day delivery), Professional ($149, up to 50K records, CSV/Excel/JSON, 5-day delivery, MySQL storage, highlighted as recommended), and Enterprise (Custom, 100K+ records, all formats, dedicated pipeline, ongoing support). Each card shows features list and a CTA button linking to #contact. Include a note: 'All prices in USD. Custom quotes available for complex projects.' Ensure responsive stacking on mobile."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the PricingPackages component into the page after the TestimonialCarousel section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Add animated Terminal/Code Window component in Technologies section showing typing Python script",
+      "acceptanceCriteria": [
+        "Terminal window component renders with macOS-style title bar dots",
+        "Code types itself out character-by-character in an infinite loop",
+        "Syntax highlighting uses gold for keywords and slate/green for comments/strings",
+        "Component is positioned in or near the Technologies section"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TerminalWindow.tsx",
+          "operation": "create",
+          "description": "Create a decorative terminal window component with macOS-style title bar (red/yellow/green dots), dark background, and a typing animation that displays a mock Python scraping script character-by-character in an infinite loop. Apply syntax highlighting using gold for keywords and slate/green for strings/comments, matching the brand palette."
+        },
+        {
+          "path": "frontend/src/components/SkillsVisualization.tsx",
+          "operation": "modify",
+          "description": "Integrate the TerminalWindow component into the Technologies section layout, positioning it as a right-side decorative panel alongside the existing skill bars and tech stack badges."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Add sticky 'Quick Contact' pill button that appears after 300px scroll",
+      "acceptanceCriteria": [
+        "Button is hidden on initial load and appears after 300px scroll",
+        "Button has gold background with navy text, pill shape",
+        "Clicking it scrolls to the #contact section",
+        "Does not overlap or conflict with other fixed UI elements",
+        "Visible on both desktop and mobile"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/QuickContactPill.tsx",
+          "operation": "create",
+          "description": "Create a sticky floating pill button with text 'Get a Free Quote' that slides in from bottom-right after scrolling 300px. Style with gold background, navy text, and pill shape. On click, smoothly scroll to #contact section. Position to avoid overlap with existing FloatingContactButton."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the QuickContactPill component into the App, rendering it as a fixed overlay element."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Update contact form to store submissions in Motoko backend and retrieve stored messages",
+      "acceptanceCriteria": [
+        "Contact form submission calls the backend submitContactMessage function",
+        "Backend stores submitted data in a stable array across upgrades",
+        "getMessages returns all stored messages",
+        "Frontend shows the same success/error toast after submission",
+        "Form resets on successful submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactForm.tsx",
+          "operation": "create",
+          "description": "Create a contact form component with fields: name, email, company (optional), budget, service (multi-select), and message. On submit, call the backend submitContactMessage function using the actor from useActor hook. Display success/error toast feedback. Reset form on successful submission. Use the backend interface types from frontend/src/backend.d.ts."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the ContactForm component into the page as the Contact section with id='contact' to support scroll anchors."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Update Counter Strip with correct metrics aligned to 3+ years experience and 2023 founding",
+      "acceptanceCriteria": [
+        "Counter strip shows exactly these four metrics with correct values",
+        "All counters animate from 0 to target value on scroll",
+        "Gold background counter strip is visually consistent with design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/DataCounterDashboard.tsx",
+          "operation": "modify",
+          "description": "Update the counter data to display: Records Scraped: 2.4M+, Projects Delivered: 60+, Data Accuracy Rate: 99.2%, Industries Served: 7+. Ensure all counters animate from 0 to target value using the existing useCounterAnimation hook when scrolled into view. Maintain gold background styling."
+        }
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "summary": "Update footer copyright to '© 2023–2026 DataNex Research Solutions · Jay Gohil · All Rights Reserved' and verify links",
+      "acceptanceCriteria": [
+        "Copyright reads '© 2023–2026 DataNex Research Solutions'",
+        "Founded 2023 badge is visible in the footer brand column",
+        "All footer nav links resolve to correct page sections"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the copyright line to read '© 2023–2026 DataNex Research Solutions · Jay Gohil · All Rights Reserved'. Ensure the 'Founded 2023' badge appears in the brand column below the logo. Verify all footer navigation links point to correct section anchors (#about, #services, #projects, #contact, etc.)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Ensure full mobile responsiveness for all new and existing sections at 375px, 768px, and 1200px breakpoints",
+      "acceptanceCriteria": [
+        "No horizontal overflow at 375px viewport width",
+        "All new sections stack vertically on mobile",
+        "Carousel shows single card on mobile",
+        "Pricing cards stack vertically on mobile",
+        "Terminal window scales down gracefully on small screens"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/LiveDataFeed.tsx",
+          "operation": "modify",
+          "description": "Add Tailwind responsive classes to ensure the ticker strips and data rows display correctly at 375px, 768px, and 1200px breakpoints. Prevent horizontal overflow."
+        },
+        {
+          "path": "frontend/src/components/DataScopeEstimator.tsx",
+          "operation": "modify",
+          "description": "Add responsive Tailwind classes to stack input controls vertically on mobile and ensure the estimator layout adapts to 375px, 768px, and 1200px breakpoints."
+        },
+        {
+          "path": "frontend/src/components/TestimonialCarousel.tsx",
+          "operation": "modify",
+          "description": "Ensure carousel shows single card on mobile (375px) and adapts layout for tablet (768px) and desktop (1200px) breakpoints using Tailwind responsive prefixes."
+        },
+        {
+          "path": "frontend/src/components/PricingPackages.tsx",
+          "operation": "modify",
+          "description": "Apply responsive Tailwind classes to stack pricing cards vertically on mobile (375px) and adapt grid layout for tablet and desktop breakpoints."
+        },
+        {
+          "path": "frontend/src/components/TerminalWindow.tsx",
+          "operation": "modify",
+          "description": "Add responsive styling to scale down the terminal window gracefully on small screens, adjusting font size and padding using Tailwind responsive prefixes."
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Ensure the About section profile card and text stack vertically on mobile and adapt to tablet/desktop layouts using Tailwind responsive classes."
+        },
+        {
+          "path": "frontend/src/components/ProjectGallery.tsx",
+          "operation": "modify",
+          "description": "Verify filter tabs and project cards adapt correctly to mobile, tablet, and desktop breakpoints. Ensure no horizontal overflow at 375px."
+        }
+      ]
+    }
+  ]
+}

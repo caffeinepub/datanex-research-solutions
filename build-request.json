@@ -1,0 +1,317 @@
+{
+  "kind": "build_request",
+  "title": "DataNex Website — Full Rebuild with 3+ Years Experience, 2023 Founded, and Enhanced Features",
+  "projectName": "DataNex Research Solutions",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update all references to experience from '2–3 years' to '3+ years' and all references to founding year to '2023' throughout every section of the site (hero badge, about section, hero stat panel, footer, meta descriptions, and any other mentions).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "set 3+ years of expirience and founded in 2023"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero stat panel shows '3+' for years experience",
+        "About section text reads '3+ years of hands-on experience'",
+        "Footer reads 'Founded 2023'",
+        "No instance of '2–3 years' remains anywhere on the site"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Rebuild the Hero section to be more visually striking: replace the plain initials placeholder with an animated data-visualization motif (live-drawing SVG lines suggesting a scraping pipeline), add a typewriter effect cycling through specialties ('Web Scraping', 'Data Research', 'Lead Generation', 'Market Intelligence'), keep the animated particle canvas, stats panel, ticker, and scroll hint.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "build original unique and amazing website",
+          "some new features and changes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Typewriter cycling text is visible beneath the main headline",
+        "Animated SVG pipeline motif renders in the hero background or alongside the headline",
+        "Particle canvas, stats panel, ticker, and scroll hint remain functional",
+        "Hero is fully responsive on mobile"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a 'Live Data Feed' marquee/ticker strip between the Hero and About sections that displays real-time-style animated data rows (mock records streaming in) with columns like Source, Records, Status, Accuracy — styled in the navy/gold theme using monospace font to feel like a live terminal output.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "build original unique and amazing website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Ticker strip appears between hero and about sections",
+        "Rows animate in continuously (looped)",
+        "Columns include at least: Source, Records, Status, Accuracy",
+        "Uses monospace font and gold/green accent colors matching the theme"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Redesign the About section to include a professional profile card on the left side that shows: initials avatar with an animated gold ring border, name 'Jay Gohil', title 'Data Research Specialist & Founder', founding badge '2023', a row of platform badges (Upwork, Fiverr, LinkedIn icons), and the 99.2% accuracy deco card. Remove the old plain frame placeholder.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "real website",
+          "fix structure",
+          "original unique and amazing website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Profile card renders with animated gold ring around avatar",
+        "Name, title, and founding year badges are visible",
+        "Platform badges row (Upwork, Fiverr, LinkedIn) is present",
+        "99.2% accuracy card is retained"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Add an interactive 'Data Scope Estimator' tool section between the Services and Projects sections. Users select: Target Website Type (dropdown: E-commerce, Directory, Social, News, Custom), Volume (slider: 1K–1M records), Output Format (CSV / Excel / JSON / MySQL), and Frequency (One-time / Weekly / Monthly). The tool dynamically displays an estimated delivery timeline and complexity badge (Simple / Moderate / Complex / Enterprise) with a CTA button 'Request This Dataset →' linking to the contact form.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "build original unique and amazing website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four input controls are interactive and functional",
+        "Estimated delivery time updates dynamically as inputs change",
+        "Complexity badge updates based on volume and frequency selections",
+        "CTA button scrolls to the contact section",
+        "Section is fully responsive"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Enhance the Projects section with a 'View All' filter tab bar (All / E-commerce / B2B Research / Lead Gen / Automation) above the project grid. Clicking a filter tab shows only matching project cards with a smooth CSS transition. Keep existing 3 projects and add 2 more: one for 'Real Estate Listing Intelligence' (property data scraping) and one for 'News & Media Sentiment Dataset' (news scraping + sentiment tagging).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "real website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Filter tabs appear above the project grid",
+        "Clicking a tab filters visible cards with animation",
+        "Two new project cards appear in the grid",
+        "'All' tab shows all 5 projects",
+        "Each new card includes category, title, description, result metric, and tech chips"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a 'Client Testimonials' section between the Why Choose Us section and the Counter Strip. Display 4 testimonial cards in a horizontally scrollable carousel. Each card shows: client name, company, country flag emoji, star rating (5 stars), a quote, and a key metric (e.g., '250K records delivered'). Include prev/next arrow buttons and dot indicators. Auto-advance every 5 seconds.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "real website",
+          "build original unique and amazing website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Testimonial section renders with at least 4 cards",
+        "Carousel auto-advances every 5 seconds",
+        "Prev/next buttons and dot indicators are functional",
+        "Each card shows name, company, flag, stars, quote, and a metric",
+        "Section is responsive (single card view on mobile)"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add a 'Pricing & Packages' section after the Testimonials section, featuring three tiered cards: Starter ($49 — up to 5K records, CSV, 3-day delivery), Professional ($149 — up to 50K records, CSV/Excel/JSON, 5-day delivery, MySQL storage), and Enterprise (Custom — 100K+ records, all formats, dedicated pipeline, ongoing support). Each card shows features list, a highlighted badge for the recommended plan, and a CTA button. Include a note: 'All prices in USD. Custom quotes available for complex projects.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "real website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three pricing cards render with correct tier names, prices, and features",
+        "Professional plan is visually highlighted as recommended",
+        "Each card has a CTA button linking to the contact section",
+        "USD note and custom quote mention are present",
+        "Section is responsive (stacked on mobile)"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Add an animated 'Terminal / Code Window' decorative component in the Technologies section (right-side panel area), showing a mock Python scraping script that types itself out character by character in a loop. The terminal window should have a macOS-style title bar (red/yellow/green dots), dark background, and syntax-highlighted code lines using the gold and slate color palette.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "build original unique and amazing website",
+          "original unique and amazing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Terminal window component renders with macOS-style title bar dots",
+        "Code types itself out character-by-character in an infinite loop",
+        "Syntax highlighting uses gold for keywords and slate/green for comments/strings",
+        "Component is positioned in or near the Technologies section"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Add a sticky floating 'Quick Contact' pill button that appears after scrolling 300px, distinct from the existing floating contact button. It should show the text 'Get a Free Quote' with a gold background and slide in from the bottom-right. Clicking it smoothly scrolls to the contact section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "some new features and changes",
+          "real website"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Button is hidden on initial load and appears after 300px scroll",
+        "Button has gold background with navy text, pill shape",
+        "Clicking it scrolls to the #contact section",
+        "Does not overlap or conflict with other fixed UI elements",
+        "Visible on both desktop and mobile"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Update the contact form to store submitted messages in the Motoko backend. The backend actor should expose a submitContactMessage function that accepts name, email, company, budget, service, and message fields, and stores them in a stable array. Also expose a getMessages query function (admin use, not gated) that returns all stored messages.",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "real website",
+          "all fix structure"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form submission calls the backend submitContactMessage function",
+        "Backend stores submitted data in a stable array across upgrades",
+        "getMessages returns all stored messages",
+        "Frontend shows the same success/error toast after submission",
+        "Form resets on successful submission"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Update the Counter Strip section data to reflect the correct values aligned with 3+ years experience and 2023 founding: Records Scraped: 2.4M+, Projects Delivered: 60+, Data Accuracy Rate: 99.2%, Industries Served: 7+. Ensure all counter animations trigger correctly on scroll into view.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "set 3+ years of expirience and founded in 2023",
+          "all fix structure"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Counter strip shows exactly these four metrics with correct values",
+        "All counters animate from 0 to target value on scroll",
+        "Gold background counter strip is visually consistent with design"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Update the footer copyright line to read '© 2023–2026 DataNex Research Solutions · Jay Gohil · All Rights Reserved' and ensure the footer 'Founded 2023' badge appears in the brand column below the logo. Verify all footer navigation links point to the correct section anchors.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "founded in 2023",
+          "all fix structure"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Copyright reads '© 2023–2026 DataNex Research Solutions'",
+        "Founded 2023 badge is visible in the footer brand column",
+        "All footer nav links resolve to correct page sections"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Ensure full mobile responsiveness across all new and existing sections. All new components (Data Scope Estimator, Testimonials Carousel, Pricing Cards, Terminal Window, Live Data Feed ticker, Project Filter tabs) must be tested for layout at 375px, 768px, and 1200px breakpoints. Use Tailwind responsive prefixes consistently.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "real website",
+          "all fix structure"
+        ]
+      },
+      "acceptanceCriteria": [
+        "No horizontal overflow at 375px viewport width",
+        "All new sections stack vertically on mobile",
+        "Carousel shows single card on mobile",
+        "Pricing cards stack vertically on mobile",
+        "Terminal window scales down gracefully on small screens"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain the existing navy (#060F1E) and gold (#C9A84C) color palette throughout all new components",
+    "Do not modify any files under frontend/src/hooks/ (immutable paths)",
+    "Do not modify frontend/src/main.tsx or frontend/src/components/ui/",
+    "All new sections must follow the existing reveal/scroll-animation pattern",
+    "Backend must remain a single Motoko actor in backend/main.mo"
+  ],
+  "nonGoals": [
+    "Real backend email sending (no SMTP or email service integration)",
+    "Authentication or login-protected admin panel",
+    "Real-time WebSocket data feeds",
+    "External API integrations (no third-party data APIs)",
+    "Multi-language / i18n support",
+    "CMS or dynamic content management"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Dark navy background with subtle gold geometric data-grid lines and faint circuit node dots, landscape banner (hero-bg-pattern.dim_1920x1080.png)",
+      "Professional dark-themed logo mark with 'DN' initials in gold on deep navy circle, square icon format (datanex-logo-icon.dim_256x256.png)",
+      "Abstract gold-on-navy data flow illustration showing connected nodes and lines suggesting a web scraping pipeline (data-pipeline-illustration.dim_800x600.png)"
+    ],
+    "edits": []
+  }
+}

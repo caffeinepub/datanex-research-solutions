@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates all sections of the DataNex website including hero, services, projects, testimonials, and contact sections with custom cursor implementation.",
+  "frontend/src/components/DataCounterDashboard.tsx": "Animated statistics dashboard component that displays key metrics with counter animations triggered on scroll, using a separate StatCard component to properly handle React hooks.",
+  "frontend/src/components/FAQAccordion.tsx": "FAQ section with search, category filtering, and accordion expand/collapse, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation.",
+  "frontend/src/components/HeroSection.tsx": "Hero section component featuring animated particle canvas background, parallax effects, staggered text animations, and animated statistics counters.",
+  "frontend/src/components/TestimonialCarousel.tsx": "Auto-rotating testimonial carousel with manual navigation and client logos, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook that uses Intersection Observer to detect when an element enters the viewport and returns visibility state and ref with proper TypeScript typing allowing null values.",
+  "frontend/src/index.css": "Global stylesheet containing Tailwind directives, OKLCH color system variables, DataNex custom color utilities, custom cursor styles, keyframe animations, 3D transforms, and responsive design tokens for the entire application.",
+  "frontend/src/components/ServicesShowcase.tsx": "Services section with 3D flip cards for each service, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation for scroll-triggered entrance animation.",
+  "frontend/src/components/ProjectGallery.tsx": "Project gallery with category filtering and modal detail view, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation.",
+  "frontend/src/components/SkillsVisualization.tsx": "Skills section with animated progress bars and tech stack grid, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation.",
+  "frontend/src/components/PricingCalculator.tsx": "Pricing section with plan cards and interactive custom price calculator, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation.",
+  "frontend/src/components/BlogPreview.tsx": "Blog preview section with featured post and side posts layout, using correct tuple destructuring `[isVisible, ref]` from useScrollAnimation."
+}
